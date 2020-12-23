@@ -1,0 +1,5 @@
+print("My Name is: Sarthak Vanrajsinh Vaghela")
+print("My Major is: Computer Science")
+print("My Department is: Computer Science")
+print("----------------------------------------------")
+print("Thank You")
