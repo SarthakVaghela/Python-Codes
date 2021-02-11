@@ -1,10 +1,10 @@
-#this code is FOR GRAPH A
+#this code is for Breadth First Search (BFS) 
 #Name : Sarthak Vanrajsinh Vaghela
-#std num: 110005362
+
 
 from queue import Queue
 
-adj_list = {
+adj_list = {                    #exaple list
     "A":["B", "D"],
     "B":["C", "D"],
     "C":["D", "G"],
@@ -24,12 +24,12 @@ adj_list = {
 
 }'''
 
-vi = {}
+vi = {}                 #variable declaration
 p = {}
 output = []
 q = Queue()
 
-for node  in adj_list.keys():
+for node  in adj_list.keys():       #main algorithem
     vi[node] = False
     p[node] = None
 
@@ -46,7 +46,7 @@ while not q.empty():
             p[v] = u
             q.put(v)
 
-print("The traversal path is: ")
+print("The traversal path is: ")           #printing the traversal path
 print(output)
 
 
@@ -54,7 +54,7 @@ print(output)
 v = "G"
 path = []
 
-while v is not None:
+while v is not None:        # printing the exact path
     path.append(v)
     v = p[v]
 path.reverse()
